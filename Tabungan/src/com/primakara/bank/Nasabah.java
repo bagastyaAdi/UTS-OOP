@@ -36,6 +36,15 @@ public class Nasabah {
         this.listTabungan = new Tabungan[3];
 
     }
+    //Assign tabungan
+
+    public void addTabungan(Tabungan tabBaru) {
+        if (this.jmlTabungan < 3) {
+            this.listTabungan[jmlTabungan] = tabBaru;
+            this.jmlTabungan++;
+        }else
+            System.out.println("Jumbah rek maksismal 3");
+    }
 
     // Getters
     public String getKodeCIF() {
