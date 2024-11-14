@@ -12,6 +12,8 @@ public class Nasabah {
     private String Pekerjaan;
     private String penghasilanRataRataSebulan;
     private String PesanEror;
+    private Tabungan[] listTabungan;
+    private int jmlTabungan;
 
     // Constructor with all mandatory fields
     public Nasabah(String kodeCIF, String NIK, String namaNasabah, String Telp) {
@@ -30,6 +32,8 @@ public class Nasabah {
         this.namaIbuKandung = namaIbuKandung;
         this.Pekerjaan = Pekerjaan;
         this.penghasilanRataRataSebulan = penghasilanRataRataSebulan;
+        this.jmlTabungan = 0;
+        this.listTabungan = new Tabungan[3];
 
     }
 
