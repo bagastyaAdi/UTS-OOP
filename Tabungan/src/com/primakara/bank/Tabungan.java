@@ -7,7 +7,7 @@ public class Tabungan {
     private double saldoAkhir;  // Final balance, minimum 50,000
 
     // Constructor
-    public Tabungan(String noRekening, String kodeCIF, double setoranAwal,double saldoAkhir) {
+    public Tabungan(String noRekening, double setoranAwal,double saldoAkhir) {
         if (noRekening.length() != 8 || !noRekening.matches("\\d+")) {
             throw new IllegalArgumentException("Nomor rekening harus berupa 8 digit angka.");
         }
