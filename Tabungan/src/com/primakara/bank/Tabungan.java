@@ -33,8 +33,6 @@ public class Tabungan {
         return saldoAkhir;
     }
 
-
-
     // Setters
     public void setNoRekening(String noRekening) {
         if (noRekening.length() != 8 || !noRekening.matches("\\d+")) {

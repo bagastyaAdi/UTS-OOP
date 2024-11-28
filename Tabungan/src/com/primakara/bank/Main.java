@@ -6,7 +6,7 @@ package com.primakara.bank;
 public class Main {
     public static void main(String[] args) {
         // Inisialisasi objek Nasabah
-        Nasabah testNasabah = new Nasabah("CIF12", "1234567890");
+        Nasabah testNasabah = new Nasabah("CIF12", "1234567890","telor");
 
         // Buat Rekening
         Tabungan rekening1 = new Tabungan("12345678", 1000000, 1000000);
@@ -26,6 +26,8 @@ public class Main {
         System.out.println("Daftar Rekening : ");
         for (int i = 0; i < testNasabah.getJmlTabungan(); i++) {
             System.out.println(testNasabah.getListTabungan()[i].getNoRekening());
+
+
         }
     }
 }

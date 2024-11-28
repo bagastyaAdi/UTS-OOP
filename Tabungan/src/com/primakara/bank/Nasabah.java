@@ -16,7 +16,7 @@ public class Nasabah {
     private int jmlTabungan;
 
     // Constructor with all mandatory fields
-    public Nasabah(String kodeCIF, String NIK) {
+    public Nasabah(String kodeCIF, String NIK, String namaNasabah) {
         if (kodeCIF.length() != 5 || !kodeCIF.matches("\\d+")) {
             PesanEror += "Kode CIF harus berupa 5 digit angka.";
         }
